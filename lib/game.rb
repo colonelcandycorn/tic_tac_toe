@@ -51,4 +51,8 @@ class Game
   def declare_winner(player)
     puts "#{player} is the big winner today!"
   end
+
+  def declare_tie
+    puts 'Tie game!'
+  end
 end

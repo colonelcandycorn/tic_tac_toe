@@ -106,4 +106,17 @@ class Board
 
     false
   end
+
+  def check_tie
+    @rows.times do |row|
+      @columns.times do |column|
+        if @board[row][column][2] == ' '
+          return false
+        else
+          next
+        end
+      end
+    end
+    true
+  end
 end
