@@ -15,7 +15,7 @@ end
 
 board.display_board
 game.declare_tie if board.check_tie
-board.declare_winner(game.players[game.current_player]) if game.check_winner(game.players[game.current_player])
+game.declare_winner(game.players[game.current_player]) if game.check_winner(game.players[game.current_player - 1])
 
 # This is the end of the program.
 # The rest of the code is in the files board.rb, game.rb, and player.rb.
